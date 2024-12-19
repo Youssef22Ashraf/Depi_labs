@@ -5,9 +5,9 @@ ls -l ~
 ##################################
 #if we use a loop
 ls -l ~
-for file in ~/*; do
-    if [ -e "$file" ]; then
-         chmod +x "$file"
+for file_dir in ~/*; do
+    if [ -e "$file_dir" ]; then
+        chmod +x "$file_dir"
     fi
- done
+done
 ls -l ~
